@@ -1,0 +1,59 @@
+.checkoutPage {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.checkoutCard {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.checkoutCard h2 {
+  font-weight: bold;
+  color: #198754;
+}
+
+.input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  border-color: #198754;
+  box-shadow: 0 0 8px rgba(25, 135, 84, 0.3);
+}
+
+.checkoutBtn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #198754;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.checkoutBtn:hover {
+  background: #157347;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

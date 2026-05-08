@@ -1,0 +1,189 @@
+.productsSection {
+  padding: 50px 0;
+  background:
+    radial-gradient(circle at top left, rgba(10, 173, 10, 0.1), transparent 28%),
+    linear-gradient(135deg, #f8fff9 0%, #ffffff 100%);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.sectionHeader span {
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background: rgba(10, 173, 10, 0.1);
+  color: #0aad0a;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.sectionHeader h2 {
+  font-size: 34px;
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.sectionHeader p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 15px;
+}
+
+.loadingBox {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.productCard {
+  height: 100%;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 22px !important;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
+  transition: 0.25s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-7px);
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.12),
+    0 8px 22px rgba(10, 173, 10, 0.08);
+  border-color: rgba(10, 173, 10, 0.25) !important;
+}
+
+.imageBox {
+  position: relative;
+  height: 230px;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.productImage {
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+  transition: 0.25s ease;
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.06);
+}
+
+.categoryBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  max-width: calc(100% - 24px);
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0aad0a;
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.cardBody {
+  padding: 18px !important;
+}
+
+.productTitle {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  min-height: 38px;
+  line-height: 1.25;
+}
+
+.brandName {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.rating span {
+  color: #f59e0b;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.rating small {
+  color: #9ca3af;
+  font-weight: 700;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  color: #0aad0a;
+  font-size: 17px;
+  font-weight: 950;
+}
+
+.addBtn {
+  width: 42px;
+  height: 42px;
+  border: none !important;
+  border-radius: 14px !important;
+  background: linear-gradient(135deg, #0aad0a, #079407) !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 22px rgba(10, 173, 10, 0.25);
+  transition: 0.2s ease;
+}
+
+.addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(10, 173, 10, 0.35);
+}
+
+@media (max-width: 576px) {
+  .productsSection {
+    padding: 32px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 24px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 26px;
+  }
+
+  .sectionHeader p {
+    font-size: 14px;
+  }
+
+  .imageBox {
+    height: 210px;
+  }
+}

@@ -1,0 +1,144 @@
+.registerPage {
+  min-height: calc(100vh - 80px);
+  padding: 18px 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top left, rgba(10, 173, 10, 0.12), transparent 30%),
+    linear-gradient(135deg, #f8fff9 0%, #ffffff 100%);
+}
+
+.formCard {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.formHeader h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.formHeader p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.label {
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.input {
+  height: 38px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #111827;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:hover {
+  background: #ffffff;
+  border-color: #b8c2cc;
+}
+
+.input:focus {
+  background: #ffffff;
+  border-color: #0aad0a;
+  box-shadow: 0 0 0 3px rgba(10, 173, 10, 0.12);
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.buttons {
+  display: grid;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.registerBtn {
+  background: linear-gradient(135deg, #0aad0a, #079407) !important;
+  border: none !important;
+  padding: 9px !important;
+  border-radius: 999px !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  box-shadow: 0 8px 20px rgba(10, 173, 10, 0.22);
+  transition: 0.2s ease;
+}
+
+.registerBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(10, 173, 10, 0.28);
+}
+
+.registerBtn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancelBtn {
+  background: #ffffff !important;
+  color: #6b7280 !important;
+  border: 1px solid #d1d5db !important;
+  padding: 9px !important;
+  border-radius: 999px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  transition: 0.2s ease;
+}
+
+.cancelBtn:hover {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+@media (max-width: 576px) {
+  .registerPage {
+    padding: 12px 10px;
+  }
+
+  .formCard {
+    max-width: 100%;
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .formHeader h2 {
+    font-size: 22px;
+  }
+
+  .input {
+    height: 36px;
+  }
+}
